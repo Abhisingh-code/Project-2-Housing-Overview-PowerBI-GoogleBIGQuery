@@ -16,6 +16,7 @@ Also since regional and economic factors affect property value, thus it is impor
 
 Step 1 : Open Google BigQuery, Add a file(local), create dataset, create a table and load the data to Google BigQuery.
 Step 2 : Created a copy of the table named 'Test' in SQL Google Bigquery
+
 Step 3 : Updated 'Square Meter Column(sqm)' value to '100' for all those cases where no_rooms is '3'. 
 Step 4 : Load data into Power BI Desktop.
 Step 5 : Open power query editor & check "column distribution", "column quality" & "column profile".
@@ -26,7 +27,7 @@ Step 7 : Data cleaning and transformation:
 (2) In 'dk_ann_infl_rate%' NULL values were replaced by 1.85(because this values occurs more often).
 (3) In 'yield_on_mortgage_credit_bonds%' NULL values were replaced by 1.47(because this values occurs more often).
 
-Step 8 : In repot view, under visualization pane, format your report page, canvas background image was added on page named 'Housing market Overview'
+Step 8 : In reprot view, under visualization pane, format your report page, canvas background image was added on page named 'Housing market Overview'
 
 
 Step 9 : KPIs, charts and DAX measures were created for:
