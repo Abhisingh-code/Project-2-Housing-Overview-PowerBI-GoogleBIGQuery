@@ -28,7 +28,9 @@ Step 6 : Select "column profiling based on entire dataset".
 Step 7 : Data cleaning and transformation:
 
 (1) In 'city' column NULL values were replaced by UNKNOWN.
+
 (2) In 'dk_ann_infl_rate%' NULL values were replaced by 1.85(because this values occurs more often).
+
 (3) In 'yield_on_mortgage_credit_bonds%' NULL values were replaced by 1.47(because this values occurs more often).
 
 Step 8 : In reprot view, under visualization pane, format your report page, canvas background image was added on page named 'Housing market Overview'
