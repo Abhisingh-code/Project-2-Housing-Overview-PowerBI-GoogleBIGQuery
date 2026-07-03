@@ -39,17 +39,17 @@ Step 9 : KPIs, charts and DAX measures were created for:
 # Housing Market Overview
 
       (1) YOY_Sales_Growth(DAX)
-VAR CurrYearSales = 
-        CALCULATE(SUM(Housing[purchase_price]),
-                 YEAR(Housing[date]) = YEAR(MAX(Housing[date])))
+      VAR CurrYearSales = 
+              CALCULATE(SUM(Housing[purchase_price]),
+                     YEAR(Housing[date]) = YEAR(MAX(Housing[date])))
 
-VAR PrevYearSales = 
+      VAR PrevYearSales = 
                 CALCULATE(SUM(Housing[purchase_price]),
                  YEAR(Housing[date]) = YEAR(MAX(Housing[date]))-1)
 
 
-RETURN
-      IF(PrevYearSales<>0, (CurrYearSales-PrevYearSales)/PrevYearSales, BLANK()) 
+      RETURN
+           IF(PrevYearSales<>0, (CurrYearSales-PrevYearSales)/PrevYearSales, BLANK()) 
 
     * A 'Line chart' was created to represent "YOY Sales Growth by Sales Type" ('YOY_Sales_Growth'(y-axis) and 'Sales_type'(x-axis))
 
@@ -61,23 +61,22 @@ RETURN
       and (Zoom Sliders) were also added in this chart.
 
      (3) Median Sales Price Change(DAX) 
- VAR CurrMedianPrice = 
+      VAR CurrMedianPrice = 
         MEDIANX(FILTER(Housing,
         YEAR(Housing[date].[Date]) =
         YEAR(MAX(Housing[date].[Date]))),
         Housing[purchase_price])
 
-VAR PreMedianPrice = 
+      VAR PreMedianPrice = 
         MEDIANX(FILTER(Housing,YEAR(Housing[date].[Date]) =
         YEAR(MAX(Housing[date].[Date]))-1),
         Housing[purchase_price])
 
 
-RETURN
-    IF(PreMedianPrice<>0,(CurrMedianPrice-PreMedianPrice)/PreMedianPrice,BLANK())
+    RETURN
+         IF(PreMedianPrice<>0,(CurrMedianPrice-PreMedianPrice)/PreMedianPrice,BLANK())
 
-    * A 'Stacked bar chart' was created to represent "Median Sales Price Change by Region" ('Region'(don't summarize)(x-axis)  and 'Median Sales Price Change'(don't summarize)
-(x-axis)).
+    * A 'Stacked bar chart' was created to represent "Median Sales Price Change by Region" ('Region'(don't summarize)(x-axis)  and 'Median Sales Price Change'(don't summarize)(x-axis)).
 
      (4) Units Sold in Latest Year & Quarter(DAX)
             CALCULATE(DISTINCTCOUNT(Housing[house_id]),
@@ -86,7 +85,7 @@ RETURN
  
     * A 'Card' visual was created to represent "Units Sold(Latest Yr & Qtr)" ('Units Sold in Latest Year & Quarter'(Values)
 
-   (5) Last 12 Month Sales(DAX)
+    (5) Last 12 Month Sales(DAX)
           CALCULATE(SUM(Housing[purchase_price]),
           DATESINPERIOD(Housing[date],MAX(Housing[date]),-12,MONTH))
 
