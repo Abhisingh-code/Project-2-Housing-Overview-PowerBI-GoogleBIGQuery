@@ -18,9 +18,13 @@ Step 1 : Open Google BigQuery, Add a file(local), create dataset, create a table
 Step 2 : Created a copy of the table named 'Test' in SQL Google Bigquery
 
 Step 3 : Updated 'Square Meter Column(sqm)' value to '100' for all those cases where no_rooms is '3'. 
+
 Step 4 : Load data into Power BI Desktop.
+
 Step 5 : Open power query editor & check "column distribution", "column quality" & "column profile".
+
 Step 6 : Select "column profiling based on entire dataset".
+
 Step 7 : Data cleaning and transformation:
 
 (1) In 'city' column NULL values were replaced by UNKNOWN.
