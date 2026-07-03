@@ -118,8 +118,9 @@ An image was added in the background
     (4) A column was created named: 
           Age(DAX)
             ABS(YEAR(Housing[date].[Date]) - Housing[year_build])
+![AGE](https://github.com/Abhisingh-code/Uploadingimages/blob/50deca3886b274b7522ddde2684d36b287d24179/AGE-PJ2.jpg)
 
-    * A 'Key Influencers' visual was added to Analyze ('Purcahse_price'(Analyze) and 'Age'(Don't Summarize) (Explain by)) 
+     * A 'Key Influencers' visual was added to Analyze ('Purcahse_price'(Analyze) and 'Age'(Don't Summarize) (Explain by)) 
 
     (5) Offer to SQM Ratio(DAX)
             DIVIDE(SUM(Housing[Offer Price]),SUM(Housing[sqm]))
