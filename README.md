@@ -88,14 +88,14 @@ Step 9 : KPIs, charts and DAX measures were created for:
             QUARTER(Housing[date]) = QUARTER(MAX(Housing[date]))) 
  
     * A 'Card' visual was created to represent "Units Sold(Latest Yr & Qtr)" ('Units Sold in Latest Year & Quarter'(Values)
-
+![12 Month Sales](https://github.com/Abhisingh-code/Uploadingimages/blob/0d6cb8246e334453b18b618335974495c286c4cf/12MS-PJ2.jpg)
+    
     (5) Last 12 Month Sales(DAX)
           CALCULATE(SUM(Housing[purchase_price]),
           DATESINPERIOD(Housing[date],MAX(Housing[date]),-12,MONTH))
 
     * A 'Card' visual was created to represent "12 Month Sales" (' Last 12 Month Sales'(Values)
-
-
+![Units Sold Latest yr&Qtr](https://github.com/Abhisingh-code/Uploadingimages/blob/0d6cb8246e334453b18b618335974495c286c4cf/US(LY%26Q)_PJ2.jpg)
 # Sales Performance
  
 An image was added in the background
@@ -126,7 +126,6 @@ An image was added in the background
             DIVIDE(SUM(Housing[Offer Price]),SUM(Housing[sqm]))
 
     *  A 'Stacked bar chart' was created to represent "Offer to SQM Ratio by Sales Type"('Sales_type'(y-axis)  and 'Offer to SQM Ratio'(x-axis))
-
 
 # House Type Analysis
 
