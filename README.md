@@ -58,7 +58,8 @@ Step 9 : KPIs, charts and DAX measures were created for:
      (2) A new column was created using 'Purchase_Price' and '%_change_between_offer_and_purchase' named:
      Offer Price(DAX) 
      (100*Housing[purchase_price])/(100-Housing[%_change_between_offer_and_purchase]) 
-     ![offer price](https://github.com/Abhisingh-code/Uploadingimages/blob/52f957dc3728530b32144c4b02f1c10b17fb4e49/OP2-PJ2.jpg)
+
+![offer price](https://github.com/Abhisingh-code/Uploadingimages/blob/52f957dc3728530b32144c4b02f1c10b17fb4e49/OP2-PJ2.jpg)
  
     * A 'Scatter plot chart' was created to represent "Offer Price v/s Purchase Price" ('Offer Price'(don't summarize)(x-axis)  and 'Purchase_Price'(don't summarize)(y-axis))
       and (Zoom Sliders) were also added in this chart.
