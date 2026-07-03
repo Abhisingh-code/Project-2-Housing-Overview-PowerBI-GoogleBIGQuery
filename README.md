@@ -134,7 +134,9 @@ An image was added in the background
 (2) A 'Clustered bar chart' was created to represent "Avg Inflation/Interest/Yield by House Type" ('house_type'(y-axis) and 'Inflation'/'Interest'/'Yield'(Average) (x-axis))
 
 'dk_ann_infl_rate%'   (Inflation)
+
 'nom_interest_rate%'  (Interest)
+
 'yield_on_mortgage_credit_bonds%' (Yield)
 
 (3) A 'Line and Stacked column chart' was created to represent "Avg SQM/SQM Price by House Type" ('house_type'(x-axis) and 'SQM'(Average)(column y-axis) and 'SQM'(Average)(Line y-axis))
