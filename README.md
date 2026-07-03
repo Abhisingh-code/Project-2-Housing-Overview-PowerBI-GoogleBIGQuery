@@ -154,11 +154,8 @@ and search option was also provided under the slicers.
 Step 11 : Report published to Power BI Service.
 
 Snapshot of Dashboard (Power BI Service)
-
 ![Page 1](https://github.com/Abhisingh-code/Uploadingimages/blob/c438c73d4afbdc3bfea596ed8563157ed336ddad/HMO(2)-PJ2.jpg)
-
 ![Page 2](https://github.com/Abhisingh-code/Uploadingimages/blob/cb826aaca39468d67f754fc2caa01d301ad194ae/SP-PJ2.jpg)
-
 ![Page 3](https://github.com/Abhisingh-code/Uploadingimages/blob/cb826aaca39468d67f754fc2caa01d301ad194ae/HTA-PJ2.jpg)
 
 
