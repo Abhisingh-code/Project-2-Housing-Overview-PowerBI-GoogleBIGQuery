@@ -54,8 +54,7 @@ RETURN
     * A 'Line chart' was created to represent "YOY Sales Growth by Sales Type" ('YOY_Sales_Growth'(y-axis) and 'Sales_type'(x-axis))
 
      (2) A new column was created using 'Purchase_Price' and '%_change_between_offer_and_purchase' named:
-         
-  Offer Price(DAX) 
+     Offer Price(DAX) 
      (100*Housing[purchase_price])/(100-Housing[%_change_between_offer_and_purchase]) 
  
     * A 'Scatter plot chart' was created to represent "Offer Price v/s Purchase Price" ('Offer Price'(don't summarize)(x-axis)  and 'Purchase_Price'(don't summarize)(y-axis))
